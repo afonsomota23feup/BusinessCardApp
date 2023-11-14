@@ -124,7 +124,7 @@ public class AddUserActivity extends AppCompatActivity {
                 newUser.addSocialMediaLink(socialMediaName, link);
             } else {
                 // Adicione logs para verificar o que está a acontecer
-                Log.d("AddUserActivity", "Nome da Rede Social Vazio: " + socialMediaName);
+                Log.d("AddUserActivity", "Nome da Rede Social Vazio!: " + socialMediaName);
                 Log.d("AddUserActivity", "Link Vazio para " + link);
             }
         }

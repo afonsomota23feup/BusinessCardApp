@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="80dp">
+
+        <Button
+                android:id="@+id/buttonSelectImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Image" />
+
+        <ImageView
+                android:id="@+id/imageViewUser"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_launcher_foreground"
+                android:contentDescription="@string/user_photo" />
+
+        <EditText
+                android:id="@+id/editTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name"
+                android:inputType="text"
+                android:layout_marginTop="16dp" />
+
+        <EditText
+                android:id="@+id/editTextUserProfession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_profession_degree"
+                android:inputType="text"
+                android:layout_marginTop="8dp" />
+
+        <EditText
+                android:id="@+id/editTextUserActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_activity"
+                android:inputType="text"
+                android:layout_marginTop="8dp" />
+
+        <EditText
+                android:id="@+id/editTextUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="8dp"/>
+
+        <EditText
+                android:id="@+id/editTextUserPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_phone"
+                android:inputType="phone"
+                android:layout_marginTop="8dp" />
+
+
+
+        <!-- Layout para exibir links de redes sociais -->
+        <LinearLayout
+                android:id="@+id/layoutSocialMediaLinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <!-- Aqui serão adicionados dinamicamente os EditTexts para os links das redes sociais -->
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/buttonAddSocialMedia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Social Media"/>
+        <Button
+                android:id="@+id/buttonSaveUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_user" />
+
+
+
+    </LinearLayout>
+</ScrollView>

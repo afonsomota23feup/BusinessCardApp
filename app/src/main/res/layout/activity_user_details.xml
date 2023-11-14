@@ -1,0 +1,90 @@
+<!-- activity_user_details.xml -->
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <!-- tools:context=".UserDetailsActivity"-->
+
+
+    <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/user_photo" />
+
+    <TextView
+            android:id="@+id/textViewTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:layout_marginTop="16dp" />
+
+    <TextView
+            android:id="@+id/textViewTextUserProfession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_profession_degree"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+    <TextView
+            android:id="@+id/textViewTextUserActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_activity"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+    <TextView
+            android:id="@+id/textViewTextUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:id="@+id/textViewTextUserPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_phone"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+    <TextView
+            android:id="@+id/textViewTextUserSocialMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_social_media"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+    <TextView
+            android:id="@+id/textViewTextUserPageLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_page_link"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+
+
+    <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit" />
+
+    <Button
+            android:id="@+id/buttonBusinessCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="e-Business Card" />
+
+</LinearLayout>

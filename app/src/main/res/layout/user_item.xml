@@ -13,9 +13,18 @@
             android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textViewUserProfession"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <TextView
             android:id="@+id/textViewUserEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray" />
+
+
 </LinearLayout>

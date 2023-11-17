@@ -1,4 +1,5 @@
 package com.feup.pesi.businesscard.activity;
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -44,14 +45,16 @@ public class AddUserActivity extends AppCompatActivity {
         editTextActivity = findViewById(R.id.editTextUserActivity);
         editTextEmail = findViewById(R.id.editTextUserEmail);
         editTextPhone = findViewById(R.id.editTextUserPhone);
-        imageViewUser = findViewById(R.id.imageViewUser);
+        //imageViewUser = findViewById(R.id.imageViewUser);
         layoutSocialMediaLinks = findViewById(R.id.layoutSocialMediaLinks);
         dbHelper = new DBHelper(this);
 
         socialMediaOptions = getResources().getStringArray(R.array.social_media_options);
         socialMediaEditTextMap = new HashMap<>();
 
+
         Button btnAddUser = findViewById(R.id.buttonSaveUser);
+        Button btnAddPicture = findViewById(R.id.buttonSelectImage);
         btnAddUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +70,7 @@ public class AddUserActivity extends AppCompatActivity {
             }
         });
 
-        imageViewUser.setOnClickListener(new View.OnClickListener() {
+        btnAddPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openImageChooser();

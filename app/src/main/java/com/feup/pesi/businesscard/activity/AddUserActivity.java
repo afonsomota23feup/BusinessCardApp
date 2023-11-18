@@ -45,7 +45,7 @@ public class AddUserActivity extends AppCompatActivity {
         editTextActivity = findViewById(R.id.editTextUserActivity);
         editTextEmail = findViewById(R.id.editTextUserEmail);
         editTextPhone = findViewById(R.id.editTextUserPhone);
-        //imageViewUser = findViewById(R.id.imageViewUser);
+        imageViewUser = findViewById(R.id.imageViewUser);
         layoutSocialMediaLinks = findViewById(R.id.layoutSocialMediaLinks);
         dbHelper = new DBHelper(this);
 
@@ -54,7 +54,7 @@ public class AddUserActivity extends AppCompatActivity {
 
 
         Button btnAddUser = findViewById(R.id.buttonSaveUser);
-        Button btnAddPicture = findViewById(R.id.buttonSelectImage);
+
         btnAddUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +70,7 @@ public class AddUserActivity extends AppCompatActivity {
             }
         });
 
-        btnAddPicture.setOnClickListener(new View.OnClickListener() {
+        imageViewUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openImageChooser();

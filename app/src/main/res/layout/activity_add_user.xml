@@ -12,14 +12,15 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/buttonSelectImage"
+        <TextView
+            android:id="@+id/textViewSelectImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select Image"
             android:backgroundTint="@color/red_brick"
             android:textColor="@android:color/white"
             android:layout_marginBottom="16dp"/>
+
 
         <ImageView
             android:id="@+id/imageViewUser"
@@ -28,7 +29,9 @@
             android:layout_gravity="center_horizontal"
             android:src="@drawable/ic_launcher_foreground"
             android:contentDescription="@string/user_photo"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"

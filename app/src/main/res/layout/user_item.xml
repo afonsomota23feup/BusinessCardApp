@@ -5,19 +5,14 @@
               android:orientation="vertical"
               android:padding="16dp">
 
-    <TextView
-            android:id="@+id/textViewUserName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+
 
     <TextView
-        android:id="@+id/textViewUserProfession"
+        android:id="@+id/textViewUserName"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp" />
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
     <TextView
             android:id="@+id/textViewUserEmail"

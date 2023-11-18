@@ -1,90 +1,159 @@
 <!-- activity_user_details.xml -->
 
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-    <!-- tools:context=".UserDetailsActivity"-->
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Information"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/red_brick"
+        android:textSize="25sp"
+        />
 
 
     <ImageView
-            android:id="@+id/imageViewUser"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/ic_launcher_foreground"
-            android:contentDescription="@string/user_photo" />
+        android:id="@+id/imageViewUser"
+        android:layout_width="148dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/user_photo"
+        android:src="@drawable/ic_launcher_foreground" />
 
     <TextView
-            android:id="@+id/textViewTextUserName"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_name"
-            android:inputType="text"
-            android:layout_marginTop="16dp" />
+            android:text="Name:"
+            android:textSize="18sp"
+            android:textColor="@color/red_brick" />
 
     <TextView
-            android:id="@+id/textViewTextUserProfession"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_profession_degree"
-            android:inputType="text"
-            android:layout_marginTop="8dp" />
+        android:id="@+id/textViewTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
 
     <TextView
-            android:id="@+id/textViewTextUserActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_activity"
-            android:inputType="text"
-            android:layout_marginTop="8dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profession or Degree:"
+        android:textColor="@color/red_brick"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
 
     <TextView
-            android:id="@+id/textViewTextUserEmail"
-            android:layout_width="match_parent"
+        android:id="@+id/textViewTextUserProfession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_profession_degree"
+        android:inputType="text"
+
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_email"
-            android:inputType="textEmailAddress"
+            android:text="Current Activity:"
+            android:textColor="@color/red_brick"
+            android:textSize="18sp"
             android:layout_marginTop="8dp"/>
-    <TextView
-            android:id="@+id/textViewTextUserPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_phone"
-            android:inputType="phone"
-            android:layout_marginTop="8dp" />
 
     <TextView
-            android:id="@+id/textViewTextUserSocialMedia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_social_media"
-            android:inputType="text"
-            android:layout_marginTop="8dp" />
-
-    <TextView
-            android:id="@+id/textViewTextUserPageLink"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_page_link"
-            android:inputType="text"
-            android:layout_marginTop="8dp" />
+        android:id="@+id/textViewTextUserActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_activity"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
 
 
-
-    <Button
-            android:id="@+id/buttonEdit"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edit" />
+            android:text="Email:"
+            android:textColor="@color/red_brick"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
 
-    <Button
+    <TextView
+        android:id="@+id/textViewTextUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number:"
+            android:textColor="@color/red_brick"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewTextUserPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media:"
+            android:textColor="@color/red_brick"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewTextUserSocialMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_social_media"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textViewTextUserPageLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_page_link"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+        <Button
             android:id="@+id/buttonBusinessCard"
-            android:layout_width="wrap_content"
+            android:layout_width="301dp"
             android:layout_height="wrap_content"
-            android:text="e-Business Card" />
+            android:layout_gravity="center"
+            android:backgroundTint="@color/red_brick"
+            android:text="e-Business Card"
+            android:textColor="@android:color/white" />
 
-</LinearLayout>
+    </LinearLayout>

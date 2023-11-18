@@ -2,94 +2,120 @@
 <!-- activity_business_card.xml -->
 
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-    <ImageView
-            android:id="@+id/imageViewUserbc"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/ic_launcher_foreground"
-            android:contentDescription="@string/user_photo" />
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/business_card_background">
 
     <TextView
-            android:id="@+id/textViewUserNamebc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/user_name"
-            android:textSize="18sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e-Card by PESI"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewUserbc"
+        android:layout_width="326dp"
+        android:layout_height="263dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/user_photo"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textViewUserNamebc"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/user_name"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
 
     <TextView
             android:id="@+id/textViewUserProfessionbc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user_profession"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"/>
+            android:layout_marginTop="12dp"
+        android:textColor="@color/white"/>
 
     <TextView
             android:id="@+id/textViewUserActivitybc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user_activity"
-            android:textSize="14sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"/>
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"/>
 
     <TextView
             android:id="@+id/textViewEmailbc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user_email"
-            android:textSize="14sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"/>
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"/>
 
     <TextView
             android:id="@+id/textViewPhonebc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user_phone"
-            android:textSize="14sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"/>
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"/>
 
 
     <!-- Adicione mais TextViews para outros atributos do usuário conforme necessário -->
 
     <LinearLayout
-            android:id="@+id/layoutSocialMediaLinks"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp">
+        android:id="@+id/layoutSocialMediaLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <!-- Adicione logotipos e links das redes sociais -->
         <ImageView
-                android:id="@+id/imageViewInstagram"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/ic_instagram"
-                android:contentDescription="@string/instagram"
-                android:onClick="openInstagramProfile"/>
+            android:id="@+id/imageViewInstagram"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/instagram"
+            android:onClick="openInstagramProfile"
+            android:src="@drawable/ic_instagram" />
 
         <ImageView
-                android:id="@+id/imageViewFacebook"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/ic_facebook"
-                android:contentDescription="@string/facebook"
-                android:onClick="openFacebookProfile"/>
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@string/facebook"
+            android:onClick="openFacebookProfile"
+            android:src="@drawable/ic_facebook" />
 
-        <!-- Adicione mais ImageViews para outras redes sociais conforme necessário -->
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pesi_logo" />
+
 </LinearLayout>

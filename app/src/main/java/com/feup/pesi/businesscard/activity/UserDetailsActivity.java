@@ -35,14 +35,7 @@ public class UserDetailsActivity extends AppCompatActivity {
 
         displayUserData(userId);
 
-        Button btEdit = findViewById(R.id.buttonEdit);
-        btEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Adicione a lógica para editar as informações do usuário
-                Toast.makeText(UserDetailsActivity.this, "Edit button clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
+
         Button buttonBusinessCard = findViewById(R.id.buttonBusinessCard);
 
         buttonBusinessCard.setOnClickListener(new View.OnClickListener() {
